@@ -1,0 +1,42 @@
+body {
+	background-color: gray;
+	margin: 0;
+}
+.container {
+	height: 100vh;
+	color: white;
+	background: #434c65 url('./images/titleBackground.jpg');
+
+	background-position: 20% 99%;
+	background-size: cover;
+	margin: 0;
+}
+header {
+	align-items: center;
+	justify-content: center;
+	height: 7vh;
+}
+nav {
+	align-items: center;
+	text-align: center;
+	display: flex;
+}
+header .logo {
+	width: 5.5em;
+}
+
+header .nav-links {
+	display: flex;
+	list-style: none;
+	width: 40%;
+	height: 100%;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: auto;
+}
+header .nav-links li a {
+	color: white;
+	text-decoration: none;
+	margin-left: 3em;
+	font-size: 1.5rem;
+}
