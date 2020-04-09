@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap');
+body {
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	background-color: #252e44;
+}
+li {
+	list-style: none;
+}
+li a {
+	text-decoration: none;
+	font-size: 2em;
+	color: rgb(255, 255, 255);
+}
+ul {
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+	margin-left: 60%;
+	margin-top: 0;
+}
+nav {
+	background-color: #2b3244;
+	width: 100vw;
+	margin: 0;
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	top: 0;
+}
+.logo {
+	height: 40px;
+	margin-left: 40px;
+}
+
+.row {
+	display: flex;
+}
+.col1 {
+	display: block;
+	height: 100vh;
+	width: 50vw;
+	margin: auto;
+}
+.col2 {
+	height: 100vh;
+	width: 50vw;
+}
+.col1 .top {
+	height: 40vh;
+	box-sizing: border-box;
+	margin-top: 1vh;
+	margin-bottom: 0;
+	padding: 120px 90px 80px 100px;
+	font-size: 40px;
+	color: white;
+	background-color: #2b324460;
+}
+.col1 .bottom {
+	height: 46.6vh;
+	padding: 120px 90px 0px 100px;
+	background-color: #181c25ad;
+
+	color: white;
+}
+.col1 .top span {
+	color: rgb(34, 252, 34);
+	background-color: ;
+}
+
+.pic1 {
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+.col2 .par {
+	padding: 200px 90px 80px 100px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(161, 111, 18, 0.795);
+}
+h2 {
+	font-size: 30px;
+	font-weight: 100;
+	color: white;
+}
+.col2 .par p {
+	font-size: 20px;
+	line-height: 40px;
+	color: rgb(187, 184, 184);
+}
+/* /==========SECTION 2=============== */
+.sec2 {
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	z-index: 2;
+}
+.sec2 .row1 {
+	z-index: 200;
+	height: 30vh;
+	width: 100vw;
+	margin: 0;
+	padding-top: 30px;
+	background-color: #344161;
+	color: white;
+}
+.sec2 .row1 h1 {
+	margin-left: 230px;
+	width: 20vw;
+	font-size: 40px;
+}
+
+.sec2 .row2 {
+	display: flex;
+	height: 70vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+}
+.sec2 .col1 {
+	width: 20vw;
+	height: 40vh;
+	margin: 0;
+	margin-left: 200px;
+	top: 0;
+	z-index: -1;
+}
+.sec2 .col2 {
+	margin: 0;
+	display: block;
+	height: 50vh;
+	width: 60vw;
+}
+.sec2 .col1 .block {
+	position: absolute;
+	background-color: #fe9d44;
+	width: 20vw;
+	height: 100vh;
+	top: 0;
+	z-index: 1;
+}
+.sec2 .col2 h2 {
+	margin-left: 50px;
+	color: #fe9d44;
+}
+.sec2 .col2 p {
+	margin-left: 50px;
+	color: #999490;
+	font-size: 20px;
+}

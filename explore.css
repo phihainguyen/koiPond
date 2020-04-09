@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap');
+body {
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+li {
+	list-style: none;
+}
+li a {
+	text-decoration: none;
+	font-size: 2em;
+	color: rgb(255, 255, 255);
+}
+ul {
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+	margin-left: 60%;
+	margin-top: 0;
+}
+nav {
+	background-color: #2b3244;
+	width: 100vw;
+	margin: 0;
+	height: 10vh;
+	display: flex;
+	align-items: center;
+}
+.landing {
+	margin: 0;
+	display: flex;
+}
+.landing a {
+	text-decoration: none;
+}
+.right {
+	margin: 0;
+	padding: 0;
+	width: 40vw;
+}
+.left {
+	width: 60vw;
+}
+.col1 {
+	height: 50vh;
+	width: 50%;
+}
+.col2 {
+	height: 50vh;
+	width: 50%;
+}
+.top {
+	margin: 0;
+	height: 40%;
+}
+.below {
+	margin: 0;
+}
+.top img {
+	width: 100%;
+	margin: 0;
+}
+.col2 img {
+	width: 100%;
+	margin: 0;
+}
+.below img {
+	width: 100%;
+	height: 90%;
+	margin: 0;
+}
+.bottom img {
+	height: 100%;
+	width: 100%;
+}
+.row1 {
+	display: flex;
+	width: 100%;
+	height: 40vh;
+	margin: 0;
+	padding: 0;
+}
+.row2 {
+	height: 40vh;
+	margin-top: 32px;
+}
+
+.left {
+	text-align: center;
+	font-size: 3em;
+	font-weight: 100;
+}
+
+.logo {
+	height: 40px;
+	margin-left: 40px;
+}

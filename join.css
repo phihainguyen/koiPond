@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap');
+body {
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+li {
+	list-style: none;
+}
+li a {
+	text-decoration: none;
+	font-size: 2em;
+	color: rgb(38, 38, 117);
+}
+ul {
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+	margin-left: 50%;
+	position: absolute;
+}
+
+.contain {
+	height: 90vh;
+}
+
+.content {
+	display: flex;
+}
+.left {
+	width: 40vw;
+	height: 100vh;
+	background-color: rgba(39, 36, 75, 0.932);
+	color: white;
+}
+.left h1 {
+	align-content: center;
+	margin-left: 10%;
+	margin-top: 50%;
+	display: block;
+	font-size: 3em;
+	font-weight: 100;
+}
+
+.left span {
+	color: orange;
+	display: block;
+	font-size: 1.2em;
+	font-weight: 900;
+}
+.right {
+	width: 60vw;
+	display: block;
+	justify-content: center;
+}
+.right h2 {
+	font-size: 3em;
+	font-weight: 100;
+	justify-self: center;
+	text-align: center;
+	margin-top: 15%;
+}
+form {
+	margin: auto;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+input {
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 2em;
+	width: 50%;
+	margin-top: 2em;
+	border: 1px solid rgba(39, 36, 75, 0.932);
+}
+input[type=submit] {
+	background-color: orange;
+	color: white;
+	width: 30%;
+	justify-content: end;
+}
+.logo {
+	position: relative;
+	top: 20%;
+	left: 25%;
+	background-color: rgba(39, 36, 75, 0.932);
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+.logo img {
+	width: 90px;
+	height: 90px;
+	position: relative;
+	top: 10%;
+	left: 12%;
+}
+.logoContainer {
+	position: absolute;
+	background-color: white;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	top: 35%;
+	left: 35%;
+}

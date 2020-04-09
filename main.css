@@ -1,31 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap');
 body {
 	background-color: gray;
 	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+section {
+	z-index: 0;
+	display: flex;
+}
+
+section .right p {
+	font-size: 2em;
+	font-weight: 1;
+	margin-top: 80%;
+	margin-bottom: 20%;
+}
+.title {
+	margin-left: 12em;
+	margin-right: 30%;
+	display: flex;
+}
+section .right button a {
+	font-size: 2.5em;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	justify-content: center;
+}
+section .right button {
+	box-sizing: border-box;
+	padding: 15px;
+	width: 50%;
+}
+
+.title h1 span {
+	font-size: 8rem;
+	line-height: 1.1em;
+}
+h1 span {
+	display: block;
+	margin: 0;
 }
 .container {
+	box-sizing: border-box;
 	height: 100vh;
+	width: 100vw;
 	color: white;
-	background: #434c65 url('./images/titleBackground.jpg');
-
+	background: rgba(76, 175, 79, 0.288) url('./images/titleBackground.jpg');
 	background-position: 20% 99%;
 	background-size: cover;
 	margin: 0;
-}
-header {
+
 	align-items: center;
+
 	justify-content: center;
-	height: 7vh;
 }
+.button {
+	margin: 50px;
+}
+button {
+	padding: 10px;
+	border-radius: .3em;
+	width: 10em;
+	font-size: 1em;
+	color: white;
+	border: none;
+	box-shadow: 0 2px rgba(34, 32, 32, 0.568);
+	background-color: orange;
+	margin: auto;
+}
+
 nav {
 	align-items: center;
 	text-align: center;
 	display: flex;
+	position: relative;
 }
-header .logo {
+nav .logo {
 	width: 5.5em;
+	margin-left: 30px;
+	align-self: center;
 }
 
-header .nav-links {
+nav .nav-links {
 	display: flex;
 	list-style: none;
 	width: 40%;
@@ -33,10 +90,121 @@ header .nav-links {
 	justify-content: space-around;
 	align-items: center;
 	margin-left: auto;
+	margin-right: 3 0px;
 }
-header .nav-links li a {
+nav .nav-links li a {
 	color: white;
 	text-decoration: none;
 	margin-left: 3em;
 	font-size: 1.5rem;
+}
+.title h1 {
+	font-size: 3rem;
+	font-weight: 400;
+}
+
+@media screen and (max-width: 769px) {
+	.hamburger {
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 20%;
+		z-index: 2000;
+	}
+	.hamburger:hover {
+		transition: all ease-in;
+		transform: scale(1.2);
+	}
+
+	.line {
+		width: 30px;
+		height: 3px;
+		background-color: white;
+		margin: 5px;
+	}
+	nav .nav-links {
+		box-sizing: border-box;
+		position: fixed;
+		background-color: #434c65;
+		height: 100%;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		left: 0;
+		top: 0;
+	}
+
+	nav .nav-links li a {
+		margin: auto;
+		font-size: 25px;
+	}
+	nav .nav-links li a:hover {
+		color: rgb(255, 187, 61);
+	}
+	nav .nav-links li:hover {
+		transition: all 0.2s ease-in-out;
+
+		transform: scale(1.2);
+	}
+	nav .nav-links {
+		clip-path: circle(100px at 95% -15%);
+		-webkit-clip-path: circle(100px at 95% -15%);
+		transition: all 1s ease-out;
+		pointer-events: none;
+	}
+	nav .nav-links.open {
+		clip-path: circle(1350px at 95% -15%);
+		-webkit-clip-path: circle(1350px at 95% -15%);
+		pointer-events: all;
+	}
+	nav .nav-links li {
+		opacity: 0;
+	}
+	nav .nav-links li:nth-child(1) {
+		transition: all 0.5s ease 0.2s;
+	}
+	nav .nav-links li:nth-child(2) {
+		transition: all 0.5s ease 0.4s;
+	}
+	nav .nav-links li:nth-child(3) {
+		transition: all 0.5s ease 0.6s;
+	}
+	nav .nav-links li.fade {
+		opacity: 1;
+	}
+	section {
+		display: block;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+	}
+	section .title {
+		margin: 30px;
+	}
+	section .title h1 span {
+		font-size: 2em;
+	}
+	section .right {
+		display: block;
+		justify-content: center;
+		align-content: center;
+		margin: auto;
+	}
+	section .right p {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+	section .right button {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	section .right button a {
+		font-size: 1.4em;
+	}
 }
